@@ -10,7 +10,7 @@
         <div>
             <h1><a href="/">My Blog</a></h1>
         {% if user.is_authenticated %}
-            <div id=AddPost class=upperBar><a href="{% url 'post_new' %}" class="myButton">Add post</a></div>
+            <div id=AddPost><a href="{% url 'post_new' %}" class="myButton">Add post</a></div>
         {% endif %}
         </div>
 
