@@ -1,10 +1,14 @@
-h1 a, h2 a {
+h1 a {
     color: whitesmoke;
     text-decoration: none;
 }
 h1{
     background-color:coral;
+    padding-top:100px;
+    padding-bottom:20px;
+    padding-left: 20px;
 }
 body{
-    background-color: rgba(224, 113, 72, 0.678)
+    background-color:whitesmoke;
+    margin:0px;
 }
