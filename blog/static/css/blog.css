@@ -1,6 +1,7 @@
 h1 a {
     color: whitesmoke;
     text-decoration: none;
+    font-family: 'Righteous', cursive;
 }
 h1{
     background-color:coral;
@@ -20,11 +21,12 @@ h2 {
 #addPost{
     padding-left:1.5%;
 }
-#pubDate{
+.Date{
     padding-left:1.5%;
     color:gray
 }
 
 p{
     font-family: 'Open Sans', sans-serif;
+    padding-left: 1.5%;
 }
