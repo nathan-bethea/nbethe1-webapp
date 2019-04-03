@@ -12,3 +12,19 @@ body{
     background-color:whitesmoke;
     margin:0px;
 }
+h2 {
+    padding-left:1.5%;
+    margin-bottom:3px;
+}
+
+#addPost{
+    padding-left:1.5%;
+}
+#pubDate{
+    padding-left:1.5%;
+    color:gray
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+}
