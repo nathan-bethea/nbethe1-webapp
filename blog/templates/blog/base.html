@@ -4,12 +4,13 @@
         <title>My blog</title>
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i|Righteous" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     </head>
     <body>
         <div>
             <h1><a href="/">My Blog</a></h1>
         {% if user.is_authenticated %}
-            <div id=AddPost><a href="{% url 'post_new' %}" >Add post</a></div>
+            <div id=AddPost><i class="fas fa-pen-square"></i><a href="{% url 'post_new' %}" >Add post</a></div>
         {% endif %}
         </div>
 
