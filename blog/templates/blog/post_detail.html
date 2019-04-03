@@ -2,10 +2,13 @@
 
 {% block content %}
 {% if user.is_authenticated %}
+<div class="upperBar">
 <a href="{% url 'post_edit' pk=post.pk %}">
   edit
 </a>
+</div>
 {% endif %}
+
     <div class="post">
         {% if post.published_date %}
         {% endif %}
