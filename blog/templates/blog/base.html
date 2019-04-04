@@ -9,6 +9,9 @@
     <body>
         <div>
             <h1><a href="/">My Blog</a></h1>
+             <ul>
+                <li><a href="kno-mor.productions">Music</a></li>
+             </ul>
         {% if user.is_authenticated %}
             <div id=AddPost><a href="{% url 'post_new' %}" class="myButton">Add post</a></div>
         {% endif %}
