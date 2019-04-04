@@ -45,8 +45,10 @@ p{
 }
 .edit a{
     text-decoration:none;
-	color:#777777;
+    color:#777777;
+    margin-left:5px;
 }
+
 
 .myButton {
 	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
