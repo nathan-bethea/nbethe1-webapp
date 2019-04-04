@@ -53,6 +53,33 @@ form{
     margin-left:10px;
 }
 
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: rgb(68, 68, 68);
+	margin-bottom: 15px;
+  }
+  
+  li {
+	float: left;
+  }
+  
+  li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: 'Righteous', cursive;
+	font-weight: normal;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+	background-color: #111;
+  }
 .myButton {
 	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
@@ -94,30 +121,3 @@ form{
 	top:1px;
 }
 
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: rgb(68, 68, 68);
-	margin-bottom: 15px;
-  }
-  
-  li {
-	float: left;
-  }
-  
-  li a {
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-family: 'Righteous', cursive;
-	font-weight: normal;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-	background-color: #111;
-  }
