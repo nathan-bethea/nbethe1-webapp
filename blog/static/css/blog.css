@@ -48,7 +48,9 @@ p{
     color:#777777;
     margin-left:5px;
 }
-
+form{
+    margin-left:10px;
+}
 
 .myButton {
 	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
