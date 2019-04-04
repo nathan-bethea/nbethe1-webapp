@@ -4,6 +4,6 @@
     <h2>New Post</h2>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
-        <button type="submit" class="myButton">Save</button>
+        <button type="submit" id="save" class="myButton">Save</button>
     </form>
 {% endblock %}
