@@ -19,7 +19,8 @@ h2 {
     margin-bottom:3px;
     font-family: 'Righteous', cursive;
     font-size:35;
-    color: #545353;   
+    color: #545353; 
+    clear: left;  
 }
 h2 a {
     text-decoration:none;
@@ -41,6 +42,10 @@ p{
 }
 #addPost{
     float:left
+}
+.edit a{
+    text-decoration:none;
+	color:#777777;
 }
 
 .myButton {

@@ -2,9 +2,9 @@
 
 {% block content %}
 {% if user.is_authenticated %}
-<div class="myButton">
+<div class="edit">
 <a href="{% url 'post_edit' pk=post.pk %}">
-  edit
+  Edit
 </a>
 </div>
 {% endif %}
