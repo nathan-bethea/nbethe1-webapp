@@ -1,6 +1,9 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
+{% if user.is_authenticated %}
+<div id=AddPost><a href="{% url 'post_new' %}" class="myButton">Add post</a></div>
+{% endif %}
     {% for post in posts %}
         <div>
             <h2>
