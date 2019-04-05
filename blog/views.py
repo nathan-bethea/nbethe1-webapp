@@ -46,7 +46,7 @@ def post_delete(request, pk=None):
     if request.method =="POST" and request.user.is_authenticated:
         post.delete()
         messages.success(request, "Post successfully deleted!")
-        return HttpResponseRedirect("blog/post_list.html")
+        return HttpResponseRedirect("https://blog.kno-mor.productions")
     context = {'post':post,}
 
     return render(request, 'blog/post_delete.html', context)
