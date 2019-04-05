@@ -45,7 +45,7 @@ def post_delete(request, pk=None):
     post = get_object_or_404(Post, pk=pk)
     if request.method =="POST" and request.user.is_authenticated:
         post.delete()
-        messages.succes(request, "Post successfully deleted!")
+        messages.success(request, "Post successfully deleted!")
         return HttpResponseRedirect("blog/post_list.html")
     context = {'post':post,}
 
