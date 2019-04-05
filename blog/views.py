@@ -3,6 +3,8 @@ from .models import Post
 from .forms import PostForm
 from django.utils import timezone
 from django.shortcuts import redirect
+from django.http import HttpResponseRedirect
+from django.contrib import messages
 
 def post_list(request):
     posts = Post.objects.order_by('published_date')
@@ -38,3 +40,14 @@ def post_edit(request, pk):
     else:
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form})
+
+def post_delete(request, pk=None):
+    post = get_object_or_404(Post, pk=pk)
+    if request.method =="POST" and request.user.is_authenticated:
+        post.delete()
+        messages.succes(request, "Post successfully deleted!")
+        return HttpResponseRedirect("blog/post_list.html")
+    context = {'post':post,}
+
+    return render(request, 'blog/post_delete.html', context)
+
